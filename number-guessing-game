@@ -1,0 +1,25 @@
+import random
+
+toprange=input("Choose the number Limit you need:       ")
+if toprange.isdigit():
+        toprange=int(toprange)
+        if toprange<=0:
+                print("Please type a number more than 0 next time.")
+                quit()
+else:
+        print("Please type a number next time.")
+        quit()
+        
+randomnumber=random.randrange(1,toprange)
+while True:
+        userguess=input("Make a guess:  ")
+        if userguess.isdigit():
+                userguess=int(userguess)
+        else:
+                print("Please type a number next time")
+                continue
+        if userguess==randomnumber:
+                print("You got it!")
+                exit()
+        else:
+                print("You're Wrong!")
