@@ -5,7 +5,7 @@ class To_do_list:
     def adding_task(self):
         task = input("Enter your Task:  ")
         self.tasks.append(task)                 #join the task to list
-        print(f"{task} is add to the list")
+        print(f"{task} is add to the list") 
     
     def delete_task(self):
         task = input("Enter your Task:  ")
